@@ -1,0 +1,38 @@
+package com.example.pyoung_woo.breedingpetsystem_2;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
+
+/**
+ * Created by Pyoung-Woo on 2016-12-07.
+ */
+
+public class MainBreeding extends Activity {
+    private RelativeLayout mLayout; //Page Background Setting
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setTheme(android.R.style.Theme_NoTitleBar_Fullscreen); //Page Full
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE); //Page Fix
+        setContentView(R.layout.breeding_main); //Page XML
+        mLayout = (RelativeLayout) findViewById(R.id.breeding_main); //Page Background_1
+        mLayout.setBackgroundColor(Color.rgb(255, 255, 255)); //Page Background_2
+
+    }
+
+    public void logOutOnClick(View v){
+        Intent intent = new Intent(this,MainLoading.class);
+        Toast.makeText(this, "Bye!", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+}
