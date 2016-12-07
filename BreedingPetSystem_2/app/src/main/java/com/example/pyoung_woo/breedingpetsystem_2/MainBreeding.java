@@ -30,9 +30,64 @@ public class MainBreeding extends Activity {
 
     }
 
-    public void logOutOnClick(View v){
-        Intent intent = new Intent(this,MainLoading.class);
-        Toast.makeText(this, "Bye!", Toast.LENGTH_SHORT).show();
+    public void disciplineOnClick(View v){
+        Intent intent = new Intent(this,BreedingDiscipline.class);
+        Toast.makeText(this, "Discipline", Toast.LENGTH_SHORT).show();
         startActivity(intent);
     }
+
+    public void diseasepreventionOnClick(View v){
+        Intent intent = new Intent(this,BreedingDiseasePrevention.class);
+        Toast.makeText(this, "Disease Prevention", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void foodOnClick(View v){
+        Intent intent = new Intent(this,BreedingFood.class);
+        Toast.makeText(this, "Feed Food", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void healthOnClick(View v){
+        Intent intent = new Intent(this,BreedingHealth.class);
+        Toast.makeText(this, "Health", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void heartrateOnClick(View v){
+        Intent intent = new Intent(this,BreedingHeartRate.class);
+        Toast.makeText(this, "Heart Rate", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void minigameOnClick(View v){
+        Intent intent = new Intent(this,BreedingMiniGame.class);
+        Toast.makeText(this, "Mini Game", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void pacecounterOnClick(View v){
+        Intent intent = new Intent(this,BreedingPaceCounter.class);
+        Toast.makeText(this, "Pace Counter", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void playOnClick(View v){
+        Intent intent = new Intent(this,BreedingPlay.class);
+        Toast.makeText(this, "Play", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void shoppingOnClick(View v){
+        Intent intent = new Intent(this,MainLoading.class);
+        Toast.makeText(this, "Shopping", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void sleepOnClick(View v){
+        Intent intent = new Intent(this,BreedingSleep.class);
+        Toast.makeText(this, "Sleep", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
 }
