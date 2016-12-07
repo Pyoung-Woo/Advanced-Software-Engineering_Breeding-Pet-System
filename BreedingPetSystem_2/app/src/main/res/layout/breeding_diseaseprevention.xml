@@ -3,4 +3,48 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:id="@+id/breeding_diseaseprevention">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pet_run"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-200dp"
+            android:id="@+id/pet_run"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hospital_diseaseprevention"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="500dp"
+            android:id="@+id/hospital"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disease Prevention"
+            android:id="@+id/startDiseasePreventionBtn"
+            android:layout_marginTop="250dp"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="startDiseasePreventionOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:id="@+id/doneDisciplineBtn"
+            android:layout_marginTop="250dp"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/startDiseasePreventionBtn"
+            android:onClick="doneDiseasePreventionOnClick"/>
+
+    </RelativeLayout>
+
+
 </RelativeLayout>

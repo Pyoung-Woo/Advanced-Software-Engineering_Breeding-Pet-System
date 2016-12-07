@@ -79,7 +79,7 @@ public class MainBreeding extends Activity {
     }
 
     public void shoppingOnClick(View v){
-        Intent intent = new Intent(this,MainLoading.class);
+        Intent intent = new Intent(this,BreedingShopping.class);
         Toast.makeText(this, "Shopping", Toast.LENGTH_SHORT).show();
         startActivity(intent);
     }

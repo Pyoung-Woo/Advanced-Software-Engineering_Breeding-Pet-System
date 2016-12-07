@@ -3,4 +3,47 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:id="@+id/breeding_food">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/pet_love"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-200dp"
+            android:id="@+id/pet_love"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pet_food"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="500dp"
+            android:id="@+id/pet_food"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feed Food"
+            android:id="@+id/startFoodBtn"
+            android:layout_marginTop="250dp"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="startFoodOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:id="@+id/doneFoodBtn"
+            android:layout_marginTop="250dp"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/startFoodBtn"
+            android:onClick="doneFoodOnClick"/>
+
+    </RelativeLayout>
+
 </RelativeLayout>

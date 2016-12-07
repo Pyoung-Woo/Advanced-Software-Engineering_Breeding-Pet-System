@@ -33,7 +33,6 @@ public class MainLogIn extends Activity {
         mLayout.setBackgroundColor(Color.rgb(255, 255, 255)); //Page Background_2
         Button touchBtn = (Button) findViewById(R.id.touchBtn);
         final ImageView touchIV = (ImageView) findViewById(R.id.pet);
-        //Toast.makeText(this, "Hi ♡", Toast.LENGTH_SHORT).show();
         touchBtn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Animation anim = AnimationUtils.loadAnimation(
