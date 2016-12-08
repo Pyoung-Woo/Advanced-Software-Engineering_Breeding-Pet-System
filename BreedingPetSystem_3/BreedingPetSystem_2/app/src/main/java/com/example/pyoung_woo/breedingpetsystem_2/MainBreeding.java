@@ -1,0 +1,93 @@
+package com.example.pyoung_woo.breedingpetsystem_2;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
+
+/**
+ * Created by Pyoung-Woo on 2016-12-07.
+ */
+
+public class MainBreeding extends Activity {
+    private RelativeLayout mLayout; //Page Background Setting
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setTheme(android.R.style.Theme_NoTitleBar_Fullscreen); //Page Full
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE); //Page Fix
+        setContentView(R.layout.breeding_main); //Page XML
+        mLayout = (RelativeLayout) findViewById(R.id.breeding_main); //Page Background_1
+        mLayout.setBackgroundColor(Color.rgb(255, 255, 255)); //Page Background_2
+
+    }
+
+    public void disciplineOnClick(View v){
+        Intent intent = new Intent(this,BreedingDiscipline.class);
+        Toast.makeText(this, "Discipline", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void diseasepreventionOnClick(View v){
+        Intent intent = new Intent(this,BreedingDiseasePrevention.class);
+        Toast.makeText(this, "Disease Prevention", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void foodOnClick(View v){
+        Intent intent = new Intent(this,BreedingFood.class);
+        Toast.makeText(this, "Feed Food", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void healthOnClick(View v){
+        Intent intent = new Intent(this,BreedingHealth.class);
+        Toast.makeText(this, "Health", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void heartrateOnClick(View v){
+        Intent intent = new Intent(this,BreedingHeartRate.class);
+        Toast.makeText(this, "Heart Rate", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void minigameOnClick(View v){
+        Intent intent = new Intent(this,BreedingMiniGame.class);
+        Toast.makeText(this, "Mini Game", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void pacecounterOnClick(View v){
+        Intent intent = new Intent(this,BreedingPaceCounter.class);
+        Toast.makeText(this, "Pace Counter", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void playOnClick(View v){
+        Intent intent = new Intent(this,BreedingPlay.class);
+        Toast.makeText(this, "Play", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void shoppingOnClick(View v){
+        Intent intent = new Intent(this,BreedingShopping.class);
+        Toast.makeText(this, "Shopping", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+    public void sleepOnClick(View v){
+        Intent intent = new Intent(this,BreedingSleep.class);
+        Toast.makeText(this, "Sleep", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
+
+}
