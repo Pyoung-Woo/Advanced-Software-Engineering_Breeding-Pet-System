@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/breeding_main">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pet_sick"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/pet_sick"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/heart_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pet_sick"
+        android:id="@+id/heart_1"/>
+
+
+<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Love"
+        android:id="@+id/love_s"
+        android:layout_toLeftOf="@+id/pet"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/status_s"
+        android:layout_toLeftOf="@+id/love_s"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health"
+        android:id="@+id/health_s"
+        android:layout_toRightOf="@+id/pet"
+        android:layout_centerVertical="true"
+        />
+-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pet_discipline"
+                android:src="@drawable/pet_discipline"
+                android:onClick="disciplineOnClick"
+                android:layout_margin="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pet_diseaseprevention"
+                android:src="@drawable/pet_diseaseprevention"
+                android:onClick="diseasepreventionOnClick"
+                android:layout_margin="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pet_food"
+                android:src="@drawable/pet_food"
+                android:onClick="foodOnClick"
+                android:layout_margin="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pet_health"
+                android:src="@drawable/pet_health"
+                android:onClick="healthOnClick"
+                android:layout_margin="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pet_heartrate"
+                android:src="@drawable/pet_heartrate"
+                android:onClick="heartrateOnClick"
+                android:layout_margin="20dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:layout_centerHorizontal="true">
+            <!--
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pet_minigame"
+                android:src="@drawable/pet_minigame"
+                android:onClick="minigameOnClick"
+                android:layout_margin="20dp"/>
+                -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pet_pacecounter"
+                android:src="@drawable/pet_pacecounter"
+                android:onClick="pacecounterOnClick"
+                android:layout_margin="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pet_play"
+                android:src="@drawable/pet_play"
+                android:onClick="playOnClick"
+                android:layout_margin="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pet_shopping"
+                android:src="@drawable/pet_shopping"
+                android:onClick="shoppingOnClick"
+                android:layout_margin="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pet_sleep"
+                android:src="@drawable/pet_sleep"
+                android:onClick="sleepOnClick"
+                android:layout_margin="20dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
