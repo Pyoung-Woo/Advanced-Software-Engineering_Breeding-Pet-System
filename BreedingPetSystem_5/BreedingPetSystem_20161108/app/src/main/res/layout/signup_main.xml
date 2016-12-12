@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signUpMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pyoung_woo.breedingpetsystem_2.MainSignUp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/signup_main"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME"
+            android:id="@+id/title"
+            android:textSize="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEW IDENTITY: "
+            android:id="@+id/identityText"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/identityEditText"
+            android:textSize="30dp"
+            android:layout_toRightOf="@+id/identityText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="90dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEW PASSWORD: "
+            android:id="@+id/passwordText"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="150dp"
+            />
+
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordEditText"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/passwordText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="140dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD CONFIRM: "
+            android:id="@+id/rePasswordText"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rePasswordEditText"
+            android:textSize="30dp"
+            android:layout_toRightOf="@+id/rePasswordText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="190dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/cancelBtn"
+            android:layout_marginTop="270dp"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="cancelOnClick"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign-Up"
+            android:id="@+id/signUpBtn"
+            android:layout_marginTop="270dp"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/cancelBtn"
+            android:onClick="signUpDoneOnClick"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
