@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/test" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="LW4VIjKLcP.test" package="LW4VIjKLcP" required_version="2.3.2"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <feature name="http://developer.samsung.com/tizen/feature/network.accessory_protocol"/>
+    <icon src="icon.png"/>
+    <tizen:metadata key="AccessoryServicesLocation" value="res/xml/accessoryservices.xml"/>
+    <name>test</name>
+    <tizen:privilege name="http://tizen.org/privilege/power"/>
+    <tizen:privilege name="http://developer.samsung.com/tizen/privilege/accessoryprotocol"/>
+    <tizen:privilege name="http://tizen.org/privilege/healthinfo"/>
+    <tizen:privilege name="http://tizen.org/privilege/location"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+</widget>
