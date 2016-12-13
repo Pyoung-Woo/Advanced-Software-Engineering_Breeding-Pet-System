@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/logInMain">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/pet"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Touch"
+            android:id="@+id/touchBtn"
+            android:textSize="30dp"
+            android:onClick="touchOnClick"
+            android:layout_below="@+id/pet"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/startBtn"
+            android:textSize="30dp"
+            android:onClick="startOnClick"
+            android:layout_below="@+id/pet"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/touchBtn"
+            android:layout_marginLeft="235dp"
+             />
+
+    </RelativeLayout>
+
+</RelativeLayout>

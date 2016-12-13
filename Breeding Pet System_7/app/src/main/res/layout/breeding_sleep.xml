@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/breeding_sleep">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pet_laydown"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/pet_laydown"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pet_sleeping"
+            android:id="@+id/pet_sleeping"
+            android:layout_above="@+id/pet_laydown"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleep"
+            android:id="@+id/startSleepBtn"
+            android:layout_marginTop="250dp"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="startSleepOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:id="@+id/doneSleepBtn"
+            android:layout_marginTop="250dp"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/startSleepBtn"
+            android:onClick="doneSleepOnClick"/>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
